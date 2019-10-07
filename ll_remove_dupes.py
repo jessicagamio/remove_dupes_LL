@@ -10,15 +10,10 @@ class Linked_List(object):
         self.head = None
         self.tail = None
 
-    def set_node(self, data):
-        """create node"""
-        node= Node(data)
-        return node
-
     def add_node_to_list(self, data):
         """add node to linked list"""
 
-        node = set_node(data)
+        node = Node(data)
 
         if self.head == None:
             node = self.head
