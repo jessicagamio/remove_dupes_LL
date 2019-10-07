@@ -1,17 +1,21 @@
 class Node(object):
     def __init__(self,data):
+        """Initialize node"""
         self.data = data
         self.next = None
 
 class Linked_List(object):
     def __init__(self):
+        """initialize LL """
         self.head = None
         self.tail = None
 
-    def add_data(self, data):
+    def set_node(self, data):
+        """create node"""
         node= Node(data)
 
     def add_node_to_list(self, node):
+        """add node to linked list"""
         if self.head == None:
             node = self.head
             self.tail == None
@@ -22,18 +26,19 @@ class Linked_List(object):
             self.tail=node
 
 
-    def rem_dupes(self)
-        
+    def rem_dupes(self):
+        """remove duplicates from linked list"""
+        prev= None
+        curr= self.head
 
-a = Node('a')
+
+
 a = Linked_List()
 
-b = Node('b')
+
 b = Linked_List()
 
-a = Linked_List()
 
-c = Node('c') 
 c = Linked_List()
 
 
