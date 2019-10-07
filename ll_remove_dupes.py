@@ -34,12 +34,12 @@ class Linked_List(object):
         node_dict = {}
 
         while curr:
-            if node_dict.get(curr,0):
+            if node_dict.get(curr.data,0):
                 curr= curr.next
                 prev=curr 
 
             else:
-                node_dict += 1
+                node_dict[curr.data] += 1
                 prev=curr
                 curr=curr.next
 
@@ -50,15 +50,7 @@ class Linked_List(object):
             curr= curr.next
 
 
+ll=Linked_List()
 
-a = Linked_List()
-node = a.set_node('a')
-a.add_node_to_list(node)
+ll.set
 
-b = Linked_List()
-node = b.set_node('b')
-b.add_node_to_list(node)
-
-c = Linked_List()
-node = c.set_node('c')
-c.add_node_to_list(node)
