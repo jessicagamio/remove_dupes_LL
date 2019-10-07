@@ -15,8 +15,11 @@ class Linked_List(object):
         node= Node(data)
         return node
 
-    def add_node_to_list(self, node):
+    def add_node_to_list(self, data):
         """add node to linked list"""
+
+        node = set_node(data)
+
         if self.head == None:
             node = self.head
             self.tail == None
@@ -52,5 +55,11 @@ class Linked_List(object):
 
 ll=Linked_List()
 
-ll.set
+ll.add_node_to_list('a')
+ll.add_node_to_list('b')
+ll.add_node_to_list('a')
+ll.add_node_to_list('c')
 
+ll.print_list()
+ll.rem_dupes()
+ll.print_list()
